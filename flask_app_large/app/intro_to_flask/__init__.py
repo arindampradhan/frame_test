@@ -13,7 +13,7 @@ app.config["MAIL_PASSWORD"] = 'your-password'
 from routes import mail
 mail.init_app(app)
  
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://arindam:123@localhost/development'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:123@localhost/development'
  
 from models import db
 db.init_app(app)
