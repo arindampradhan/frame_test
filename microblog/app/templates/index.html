@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<script type="text/css">
+.yo{
+	color:{{cbb}};
+}
+</script>
+<h1>Hi, {{user.nickname}}!</h1>
+{% for post in posts %}
+<div class="yo"><p>{{post.author.nickname}} : {{post.body}}</p> </div>
+{% endfor %}
+{% endblock %}
