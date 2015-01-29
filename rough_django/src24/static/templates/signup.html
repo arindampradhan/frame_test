@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block jumbotron %}
+    <div class="jumbotron">
+      <div class="container">
+
+        </div>      
+        <h1>Hello, world!</h1>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+      </div>
+    </div>
+{% endblock %}
+
+
+{% block content %}
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class=" col-sm-4">
+          <h2>Fork me</h2>
+          <p><img src="{{ STATIC_URL }}img/A.png" class="img-responsive" alt=""></p>
+        </div>
+        <div class="col-sm-4">
+          <h2>Git me</h2>
+          <p><img src="{{ STATIC_URL }}img/codercat.jpg" class="img-responsive" alt=""></p>
+       </div>
+
+        <div class="col-sm-4">
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_xclick">
+          <input type="hidden" name="business" value="arindampradhan10@gmail.com">
+          <input type="hidden" name="lc" value="IN">
+          <input type="hidden" name="item_name" value="Hello">
+          <input type="hidden" name="button_subtype" value="services">
+          <input type="hidden" name="no_note" value="0">
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="hidden" name="tax_rate" value="2.000">
+          <input type="hidden" name="shipping" value="1.00">
+          <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
+          <table>
+          <input type="hidden" name="on0" value="Hola">
+          <h1>Join our course</h1>
+          <br/>
+          <select class="form-control"  name="os0">
+            <option value="Basic">Basic $10.00 USD</option>
+            <option value="None">None $5.00 USD</option>
+            <option value="Hello">Hello $3.00 USD</option>
+          </select> 
+          </table>
+          <br/>
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="hidden" name="option_select0" value="Basic">
+          <input type="hidden" name="option_amount0" value="10.00">
+          <input type="hidden" name="option_select1" value="None">
+          <input type="hidden" name="option_amount1" value="5.00">
+          <input type="hidden" name="option_select2" value="Hello">
+          <input type="hidden" name="option_amount2" value="3.00">
+          <input type="hidden" name="option_index" value="0">
+          <input type="submit" value="pay us !!" class="btn btn-success btn-block" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+
+          </form>
+
+
+    </div>
+  </div>
+{% endblock %}
